@@ -1,0 +1,32 @@
+﻿Team (Class 1):
+- TeamMembers (List<Person>)
+- TeamName (string)
+
+Person (Class 2):
+- FirstName (string)
+- LastName (string)
+- EmailAddress (string)
+- CellPhoneNumber (string) 
+
+Tournament (Central Data Hub):
+- TournamentName (string)
+- EntryFee (decimal (more precise than double))
+- EnteredTeams (List<Teams>)
+- Prizes (List<Prize>)
+- Rounds (List<List<Matchup>>) [List of all rounds]
+
+Prize (Class 3):
+- PlaceNumber (int) [1 - 1st place, 2 - 2nd place, ...]
+- PlaeNumber (string) [champion - 1st, ..]
+- PrizeAmount (decimal)
+- PrizePercentage (double)
+
+Matchup (Class 4):
+- Entries (List<MatchupEntry>)
+- Winner (Team)
+- MatchupRound (int)
+
+MatchupEntry (Class 5):
+- TeamCompeting (Team)
+- Score (double)
+- ParentMatchup (Matchup)

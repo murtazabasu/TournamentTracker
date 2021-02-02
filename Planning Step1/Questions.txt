@@ -1,0 +1,17 @@
+﻿Questions to be answered by the Stakeholder
+
+How many players will the tournament handle? Is it varible?
+If a tournament has less than the full complement of players, how do we handle it? (4 player works; but what about 3 at the start?)
+Should the ordering of who plays eac other be random or ordered by input order?
+Should we schedulr the game or are they just played whenever?
+If the games are scheduled, how does the system know when to schedule games for? 
+If the games are played whenever, can a game from the second round be played before the first round is complete?
+Does the system need to store a score of some kind or just who won?
+What type of front-end should this system have (form , webpage, app, etc.)?
+Where will the data be stored? (Maybe on SQL?)
+Will the system handle entry fees, prizes, or other payouts?
+What type of reporting is needed? // need a score-card? How to present the results?
+Who can fill in the results of a game? // is the computer going to do this or by a admin person?
+Are there varying levels of access? // some people can have limited access but the admin can have full rights? 
+Should this system contact users about upcoming games? // Email ?
+Is each player on their own or can teams use this tournament tracker?

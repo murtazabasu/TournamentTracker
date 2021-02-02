@@ -1,0 +1,16 @@
+﻿Structure: Windows Forms application and class library
+
+Data: SQL and/or Text File
+
+Users: One at a time on one application
+
+
+Key Concepts:
+
+- Email: How to mail users using C#?
+- SQL: How to access data using C#?
+- Custom Events
+- Error Handling
+- Interfaces
+- Random Ordering
+- Texting: capture phone number for SMS notification
