@@ -38,6 +38,16 @@ namespace TrackerUI
                 {
                     db.CreatePrize(model);
                 }
+                // reset to default values after 
+                // the data has been entered and validated.
+                placeNameValue.Text = "";
+                placeNumberValue.Text = "";
+                prizeAmountValue.Text = "0";
+                prizePercentageValue.Text = "0";
+            }
+            else
+            {
+                MessageBox.Show("This for has invalid information! \nPlease check it and try again.");
             }
         }
         private bool ValidateForm()
