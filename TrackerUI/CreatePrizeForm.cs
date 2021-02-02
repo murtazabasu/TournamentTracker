@@ -20,17 +20,25 @@ namespace TrackerUI
 
         private void prizePercentageLabel_Click(object sender, EventArgs e)
         {
-            if (ValidateForm())
-            {
-                PrizeModel model = new PrizeModel();
-                model.PlaceName = placeNameValue.Text;
-                model.PlaceNumber = placeNumberValue.Text;  // can try TryParse or: create a constructor in PrizeModel
-            }
+            
         }
 
         private void createPrizeButton_Click(object sender, EventArgs e)
         {
+            if (ValidateForm())
+            {
+                // can try TryParse or: create a constructor in PrizeModel
+                PrizeModel model = new PrizeModel(
+                    placeNameValue.Text,
+                    placeNumberValue.Text,
+                    prizeAmountValue.Text,
+                    prizePercentageValue.Text);
 
+                foreach (IDataConnection db in GlobalConfig.Connections)
+                {
+                    db.CreatePrize(model);
+                }
+            }
         }
         private bool ValidateForm()
         {
