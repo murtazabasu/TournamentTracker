@@ -14,12 +14,12 @@ namespace TrackerUI
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Initialize the database connection
+            // Initialize the database connection --> SQL & Text 
             TrackerLibrary.GlobalConfig.InitializeConnections(true, true);
-
             Application.Run(new CreatePrizeForm());
             //Application.Run(new TournamentDashboardForm());
         }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrackerLibrary;
+using TrackerLibrary.DataAccess;
+using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
@@ -45,6 +47,7 @@ namespace TrackerUI
                 prizeAmountValue.Text = "0";
                 prizePercentageValue.Text = "0";
             }
+
             else
             {
                 MessageBox.Show("This for has invalid information! \nPlease check it and try again.");

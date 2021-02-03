@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     /// <summary>
     /// Represents one person.
@@ -12,8 +12,8 @@ namespace TrackerLibrary
         /// <summary>
         /// The first name of the person.
         /// </summary>
-        public string FirstName {get; set; }
-        
+        public string FirstName { get; set; }
+
         /// <summary>
         /// The last name of the person.
         /// </summary>
