@@ -36,10 +36,8 @@ namespace TrackerUI
                     prizeAmountValue.Text,
                     prizePercentageValue.Text);
 
-                foreach (IDataConnection db in GlobalConfig.Connections)
-                {
-                    db.CreatePrize(model);
-                }
+                GlobalConfig.Connection.CreatePrize(model);
+
                 // reset to default values after 
                 // the data has been entered and validated.
                 placeNameValue.Text = "";
@@ -50,7 +48,7 @@ namespace TrackerUI
 
             else
             {
-                MessageBox.Show("This for has invalid information! \nPlease check it and try again.");
+                MessageBox.Show("This form has invalid information! \nPlease check it and try again.");
             }
         }
         private bool ValidateForm()

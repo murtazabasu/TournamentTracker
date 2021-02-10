@@ -37,7 +37,6 @@ namespace TrackerLibrary.DataAccess
 
                 // to catch the id param as it flows outward
                 model.Id = p.Get<int>("@id");
-
                 return model;
             }
         }
